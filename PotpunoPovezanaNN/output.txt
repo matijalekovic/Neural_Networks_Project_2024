@@ -1,0 +1,63 @@
+"C:\Users\matij\Documents\FAKULTET\Neuralne Mreže\Projekat_Matija_Irina\venv\Scripts\python.exe" "C:\Users\matij\Documents\FAKULTET\Neuralne Mreže\Projekat_Matija_Irina\PotpunoPovezanaNN\feedforward_nn.py" 
+Testing 27 hyperparameter combinations...
+lr=0.001, hidden=32, dropout=0.2 -> mean val acc: 0.9425
+lr=0.001, hidden=32, dropout=0.3 -> mean val acc: 0.9419
+lr=0.001, hidden=32, dropout=0.5 -> mean val acc: 0.9416
+lr=0.001, hidden=64, dropout=0.2 -> mean val acc: 0.9416
+lr=0.001, hidden=64, dropout=0.3 -> mean val acc: 0.9419
+lr=0.001, hidden=64, dropout=0.5 -> mean val acc: 0.9416
+lr=0.001, hidden=128, dropout=0.2 -> mean val acc: 0.9422
+lr=0.001, hidden=128, dropout=0.3 -> mean val acc: 0.9422
+lr=0.001, hidden=128, dropout=0.5 -> mean val acc: 0.9416
+lr=0.005, hidden=32, dropout=0.2 -> mean val acc: 0.9422
+lr=0.005, hidden=32, dropout=0.3 -> mean val acc: 0.9422
+lr=0.005, hidden=32, dropout=0.5 -> mean val acc: 0.9434
+lr=0.005, hidden=64, dropout=0.2 -> mean val acc: 0.9425
+lr=0.005, hidden=64, dropout=0.3 -> mean val acc: 0.9425
+lr=0.005, hidden=64, dropout=0.5 -> mean val acc: 0.9425
+lr=0.005, hidden=128, dropout=0.2 -> mean val acc: 0.9416
+lr=0.005, hidden=128, dropout=0.3 -> mean val acc: 0.9425
+lr=0.005, hidden=128, dropout=0.5 -> mean val acc: 0.9422
+lr=0.01, hidden=32, dropout=0.2 -> mean val acc: 0.9416
+lr=0.01, hidden=32, dropout=0.3 -> mean val acc: 0.9419
+lr=0.01, hidden=32, dropout=0.5 -> mean val acc: 0.9419
+lr=0.01, hidden=64, dropout=0.2 -> mean val acc: 0.9419
+lr=0.01, hidden=64, dropout=0.3 -> mean val acc: 0.9422
+lr=0.01, hidden=64, dropout=0.5 -> mean val acc: 0.9422
+lr=0.01, hidden=128, dropout=0.2 -> mean val acc: 0.9428
+lr=0.01, hidden=128, dropout=0.3 -> mean val acc: 0.9416
+lr=0.01, hidden=128, dropout=0.5 -> mean val acc: 0.9419
+Grid search finished in 1071.9s
+Best config: (0.005, 32, 0.5) with mean val acc: 0.9433535296118783
+Epoch 10/80 | Train acc 0.9270 | Val acc 0.9370
+Epoch 20/80 | Train acc 0.9270 | Val acc 0.9399
+Epoch 30/80 | Train acc 0.9313 | Val acc 0.9340
+Epoch 40/80 | Train acc 0.9295 | Val acc 0.9428
+Epoch 50/80 | Train acc 0.9281 | Val acc 0.9384
+Epoch 60/80 | Train acc 0.9324 | Val acc 0.9399
+Epoch 70/80 | Train acc 0.9250 | Val acc 0.9399
+Epoch 80/80 | Train acc 0.9270 | Val acc 0.9399
+
+Final results:
+Train acc: 0.9369, Test acc: 0.9284
+
+Classification report (test):
+              precision    recall  f1-score   support
+
+      Cammeo       0.91      0.91      0.91       326
+     Kecimen       1.00      1.00      1.00        90
+    Osmancik       0.93      0.93      0.93       436
+
+    accuracy                           0.93       852
+   macro avg       0.95      0.95      0.95       852
+weighted avg       0.93      0.93      0.93       852
+
+Test Accuracy: 0.9284
+Test Precision (weighted): 0.9284
+Test Recall/Sensitivity (weighted): 0.9284
+Test F1-score (weighted): 0.9284
+
+Best hyperparameters found:
+Learning rate: 0.005, Hidden size: 32, Dropout: 0.5
+
+Process finished with exit code 0
