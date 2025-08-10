@@ -1,59 +1,199 @@
 "C:\Users\matij\Documents\FAKULTET\Neuralne Mreže\Projekat_Matija_Irina\venv\Scripts\python.exe" "C:\Users\matij\Documents\FAKULTET\Neuralne Mreže\Projekat_Matija_Irina\PotpunoPovezanaNN\feedforward_nn.py" 
+Classes found: ['Cammeo' 'Kecimen' 'Osmancik']
+Samples per class in full dataset:
+0    1629
+1     450
+2    2180
+Name: count, dtype: int64
+Train+Val class distribution:
+0    1303
+1     360
+2    1744
+Name: count, dtype: int64
+Test class distribution:
+0    326
+1     90
+2    436
+Name: count, dtype: int64
 Starting hyperparameter search over neurons, activation, and learning rate...
-neurons=32, activation=relu, lr=0.001 -> mean val acc=0.9152
-neurons=32, activation=relu, lr=0.005 -> mean val acc=0.8823
-neurons=32, activation=relu, lr=0.01 -> mean val acc=0.8230
-neurons=32, activation=tanh, lr=0.001 -> mean val acc=0.9219
-neurons=32, activation=tanh, lr=0.005 -> mean val acc=0.9184
-neurons=32, activation=tanh, lr=0.01 -> mean val acc=0.8612
-neurons=32, activation=sigmoid, lr=0.001 -> mean val acc=0.9111
-neurons=32, activation=sigmoid, lr=0.005 -> mean val acc=0.9081
-neurons=32, activation=sigmoid, lr=0.01 -> mean val acc=0.8230
-neurons=64, activation=relu, lr=0.001 -> mean val acc=0.9187
-neurons=64, activation=relu, lr=0.005 -> mean val acc=0.8582
-neurons=64, activation=relu, lr=0.01 -> mean val acc=0.8383
-neurons=64, activation=tanh, lr=0.001 -> mean val acc=0.9202
-neurons=64, activation=tanh, lr=0.005 -> mean val acc=0.9067
-neurons=64, activation=tanh, lr=0.01 -> mean val acc=0.8629
-neurons=64, activation=sigmoid, lr=0.001 -> mean val acc=0.9105
-neurons=64, activation=sigmoid, lr=0.005 -> mean val acc=0.8647
-neurons=64, activation=sigmoid, lr=0.01 -> mean val acc=0.7613
-neurons=128, activation=relu, lr=0.001 -> mean val acc=0.9149
-neurons=128, activation=relu, lr=0.005 -> mean val acc=0.9146
-neurons=128, activation=relu, lr=0.01 -> mean val acc=0.7596
-neurons=128, activation=tanh, lr=0.001 -> mean val acc=0.9175
-neurons=128, activation=tanh, lr=0.005 -> mean val acc=0.9017
-neurons=128, activation=tanh, lr=0.01 -> mean val acc=0.8533
-neurons=128, activation=sigmoid, lr=0.001 -> mean val acc=0.9143
-neurons=128, activation=sigmoid, lr=0.005 -> mean val acc=0.8130
-neurons=128, activation=sigmoid, lr=0.01 -> mean val acc=0.7992
+Early stopping at epoch 20
+Early stopping at epoch 16
+Early stopping at epoch 16
+Early stopping at epoch 21
+Early stopping at epoch 19
+neurons=32, activation=relu, lr=0.001 -> mean val acc=0.9387
+Early stopping at epoch 17
+Early stopping at epoch 20
+Early stopping at epoch 20
+Early stopping at epoch 19
+Early stopping at epoch 21
+neurons=32, activation=relu, lr=0.005 -> mean val acc=0.9404
+Early stopping at epoch 15
+Early stopping at epoch 11
+Early stopping at epoch 13
+Early stopping at epoch 17
+Early stopping at epoch 16
+neurons=32, activation=relu, lr=0.01 -> mean val acc=0.9398
+Early stopping at epoch 28
+Early stopping at epoch 21
+Early stopping at epoch 33
+Early stopping at epoch 24
+Early stopping at epoch 30
+neurons=32, activation=tanh, lr=0.001 -> mean val acc=0.9419
+Early stopping at epoch 18
+Early stopping at epoch 23
+Early stopping at epoch 16
+Early stopping at epoch 24
+Early stopping at epoch 33
+neurons=32, activation=tanh, lr=0.005 -> mean val acc=0.9404
+Early stopping at epoch 14
+Early stopping at epoch 11
+Early stopping at epoch 19
+Early stopping at epoch 20
+Early stopping at epoch 18
+neurons=32, activation=tanh, lr=0.01 -> mean val acc=0.9413
+Early stopping at epoch 27
+Early stopping at epoch 16
+Early stopping at epoch 19
+Early stopping at epoch 15
+Early stopping at epoch 21
+neurons=32, activation=sigmoid, lr=0.001 -> mean val acc=0.9395
+Early stopping at epoch 23
+Early stopping at epoch 22
+Early stopping at epoch 12
+Early stopping at epoch 18
+Early stopping at epoch 22
+neurons=32, activation=sigmoid, lr=0.005 -> mean val acc=0.9401
+Early stopping at epoch 11
+Early stopping at epoch 27
+Early stopping at epoch 13
+Early stopping at epoch 16
+Early stopping at epoch 12
+neurons=32, activation=sigmoid, lr=0.01 -> mean val acc=0.9404
+Early stopping at epoch 42
+Early stopping at epoch 27
+Early stopping at epoch 18
+Early stopping at epoch 14
+Early stopping at epoch 15
+neurons=64, activation=relu, lr=0.001 -> mean val acc=0.9404
+Early stopping at epoch 12
+Early stopping at epoch 18
+Early stopping at epoch 17
+Early stopping at epoch 26
+Early stopping at epoch 19
+neurons=64, activation=relu, lr=0.005 -> mean val acc=0.9416
+Early stopping at epoch 18
+Early stopping at epoch 22
+Early stopping at epoch 24
+Early stopping at epoch 22
+Early stopping at epoch 21
+neurons=64, activation=relu, lr=0.01 -> mean val acc=0.9401
+Early stopping at epoch 13
+Early stopping at epoch 16
+Early stopping at epoch 24
+Early stopping at epoch 19
+Early stopping at epoch 18
+neurons=64, activation=tanh, lr=0.001 -> mean val acc=0.9401
+Early stopping at epoch 14
+Early stopping at epoch 18
+Early stopping at epoch 21
+Early stopping at epoch 23
+Early stopping at epoch 15
+neurons=64, activation=tanh, lr=0.005 -> mean val acc=0.9398
+Early stopping at epoch 13
+Early stopping at epoch 28
+Early stopping at epoch 16
+Early stopping at epoch 20
+Early stopping at epoch 20
+neurons=64, activation=tanh, lr=0.01 -> mean val acc=0.9395
+Early stopping at epoch 29
+Early stopping at epoch 13
+Early stopping at epoch 20
+Early stopping at epoch 23
+Early stopping at epoch 15
+neurons=64, activation=sigmoid, lr=0.001 -> mean val acc=0.9395
+Early stopping at epoch 20
+Early stopping at epoch 30
+Early stopping at epoch 12
+Early stopping at epoch 12
+Early stopping at epoch 28
+neurons=64, activation=sigmoid, lr=0.005 -> mean val acc=0.9401
+Early stopping at epoch 13
+Early stopping at epoch 11
+Early stopping at epoch 14
+Early stopping at epoch 17
+Early stopping at epoch 16
+neurons=64, activation=sigmoid, lr=0.01 -> mean val acc=0.9392
+Early stopping at epoch 19
+Early stopping at epoch 15
+Early stopping at epoch 16
+Early stopping at epoch 12
+Early stopping at epoch 21
+neurons=128, activation=relu, lr=0.001 -> mean val acc=0.9407
+Early stopping at epoch 23
+Early stopping at epoch 19
+Early stopping at epoch 12
+Early stopping at epoch 16
+Early stopping at epoch 13
+neurons=128, activation=relu, lr=0.005 -> mean val acc=0.9404
+Early stopping at epoch 24
+Early stopping at epoch 16
+Early stopping at epoch 23
+Early stopping at epoch 27
+Early stopping at epoch 19
+neurons=128, activation=relu, lr=0.01 -> mean val acc=0.9413
+Early stopping at epoch 29
+Early stopping at epoch 27
+Early stopping at epoch 14
+Early stopping at epoch 14
+Early stopping at epoch 20
+neurons=128, activation=tanh, lr=0.001 -> mean val acc=0.9404
+Early stopping at epoch 21
+Early stopping at epoch 24
+Early stopping at epoch 26
+Early stopping at epoch 14
+Early stopping at epoch 18
+neurons=128, activation=tanh, lr=0.005 -> mean val acc=0.9422
+Early stopping at epoch 17
+Early stopping at epoch 15
+Early stopping at epoch 17
+Early stopping at epoch 20
+Early stopping at epoch 13
+neurons=128, activation=tanh, lr=0.01 -> mean val acc=0.9392
+Early stopping at epoch 22
+Early stopping at epoch 23
+Early stopping at epoch 18
+Early stopping at epoch 18
+Early stopping at epoch 20
+neurons=128, activation=sigmoid, lr=0.001 -> mean val acc=0.9395
+Early stopping at epoch 12
+Early stopping at epoch 17
+Early stopping at epoch 16
+Early stopping at epoch 14
+Early stopping at epoch 13
+neurons=128, activation=sigmoid, lr=0.005 -> mean val acc=0.9390
+Early stopping at epoch 15
+Early stopping at epoch 13
+Early stopping at epoch 26
+Early stopping at epoch 25
+Early stopping at epoch 16
+neurons=128, activation=sigmoid, lr=0.01 -> mean val acc=0.9395
 
 Best hyperparameter combination found:
-Neurons: 32, Activation: tanh, Learning rate: 0.001
-Mean validation accuracy: 0.9219
+Neurons: 128, Activation: tanh, Learning rate: 0.005
+Mean validation accuracy: 0.9422
+Early stopping at epoch 14
 
-Training final model with best hyperparameters...
-Early stopping at epoch 11
-
-Classification Report (Test Set):
+Classification Report on Test Set:
               precision    recall  f1-score   support
 
-      Cammeo       0.50      1.00      0.67       326
+      Cammeo       0.94      0.86      0.90       326
      Kecimen       1.00      1.00      1.00        90
-    Osmancik       0.99      0.27      0.42       436
+    Osmancik       0.90      0.96      0.93       436
 
-    accuracy                           0.62       852
-   macro avg       0.83      0.75      0.70       852
-weighted avg       0.81      0.62      0.58       852
+    accuracy                           0.93       852
+   macro avg       0.95      0.94      0.94       852
+weighted avg       0.93      0.93      0.93       852
 
-Test Accuracy: 0.6232
-Test Precision (weighted): 0.8058
-Test Recall/Sensitivity (weighted): 0.6232
-Test F1-score (weighted): 0.5765
-
-Best hyperparameters found:
-Neurons in first hidden layer: 32
-Activation function in first hidden layer: tanh
-Learning rate: 0.001
 
 Process finished with exit code 0
