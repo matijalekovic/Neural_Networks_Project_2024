@@ -1,63 +1,59 @@
 "C:\Users\matij\Documents\FAKULTET\Neuralne Mreže\Projekat_Matija_Irina\venv\Scripts\python.exe" "C:\Users\matij\Documents\FAKULTET\Neuralne Mreže\Projekat_Matija_Irina\PotpunoPovezanaNN\feedforward_nn.py" 
-Testing 27 hyperparameter combinations...
-lr=0.001, hidden=32, dropout=0.2 -> mean val acc: 0.9425
-lr=0.001, hidden=32, dropout=0.3 -> mean val acc: 0.9419
-lr=0.001, hidden=32, dropout=0.5 -> mean val acc: 0.9416
-lr=0.001, hidden=64, dropout=0.2 -> mean val acc: 0.9416
-lr=0.001, hidden=64, dropout=0.3 -> mean val acc: 0.9419
-lr=0.001, hidden=64, dropout=0.5 -> mean val acc: 0.9416
-lr=0.001, hidden=128, dropout=0.2 -> mean val acc: 0.9422
-lr=0.001, hidden=128, dropout=0.3 -> mean val acc: 0.9422
-lr=0.001, hidden=128, dropout=0.5 -> mean val acc: 0.9416
-lr=0.005, hidden=32, dropout=0.2 -> mean val acc: 0.9422
-lr=0.005, hidden=32, dropout=0.3 -> mean val acc: 0.9422
-lr=0.005, hidden=32, dropout=0.5 -> mean val acc: 0.9434
-lr=0.005, hidden=64, dropout=0.2 -> mean val acc: 0.9425
-lr=0.005, hidden=64, dropout=0.3 -> mean val acc: 0.9425
-lr=0.005, hidden=64, dropout=0.5 -> mean val acc: 0.9425
-lr=0.005, hidden=128, dropout=0.2 -> mean val acc: 0.9416
-lr=0.005, hidden=128, dropout=0.3 -> mean val acc: 0.9425
-lr=0.005, hidden=128, dropout=0.5 -> mean val acc: 0.9422
-lr=0.01, hidden=32, dropout=0.2 -> mean val acc: 0.9416
-lr=0.01, hidden=32, dropout=0.3 -> mean val acc: 0.9419
-lr=0.01, hidden=32, dropout=0.5 -> mean val acc: 0.9419
-lr=0.01, hidden=64, dropout=0.2 -> mean val acc: 0.9419
-lr=0.01, hidden=64, dropout=0.3 -> mean val acc: 0.9422
-lr=0.01, hidden=64, dropout=0.5 -> mean val acc: 0.9422
-lr=0.01, hidden=128, dropout=0.2 -> mean val acc: 0.9428
-lr=0.01, hidden=128, dropout=0.3 -> mean val acc: 0.9416
-lr=0.01, hidden=128, dropout=0.5 -> mean val acc: 0.9419
-Grid search finished in 1071.9s
-Best config: (0.005, 32, 0.5) with mean val acc: 0.9433535296118783
-Epoch 10/80 | Train acc 0.9270 | Val acc 0.9370
-Epoch 20/80 | Train acc 0.9270 | Val acc 0.9399
-Epoch 30/80 | Train acc 0.9313 | Val acc 0.9340
-Epoch 40/80 | Train acc 0.9295 | Val acc 0.9428
-Epoch 50/80 | Train acc 0.9281 | Val acc 0.9384
-Epoch 60/80 | Train acc 0.9324 | Val acc 0.9399
-Epoch 70/80 | Train acc 0.9250 | Val acc 0.9399
-Epoch 80/80 | Train acc 0.9270 | Val acc 0.9399
+Starting hyperparameter search over neurons, activation, and learning rate...
+neurons=32, activation=relu, lr=0.001 -> mean val acc=0.9152
+neurons=32, activation=relu, lr=0.005 -> mean val acc=0.8823
+neurons=32, activation=relu, lr=0.01 -> mean val acc=0.8230
+neurons=32, activation=tanh, lr=0.001 -> mean val acc=0.9219
+neurons=32, activation=tanh, lr=0.005 -> mean val acc=0.9184
+neurons=32, activation=tanh, lr=0.01 -> mean val acc=0.8612
+neurons=32, activation=sigmoid, lr=0.001 -> mean val acc=0.9111
+neurons=32, activation=sigmoid, lr=0.005 -> mean val acc=0.9081
+neurons=32, activation=sigmoid, lr=0.01 -> mean val acc=0.8230
+neurons=64, activation=relu, lr=0.001 -> mean val acc=0.9187
+neurons=64, activation=relu, lr=0.005 -> mean val acc=0.8582
+neurons=64, activation=relu, lr=0.01 -> mean val acc=0.8383
+neurons=64, activation=tanh, lr=0.001 -> mean val acc=0.9202
+neurons=64, activation=tanh, lr=0.005 -> mean val acc=0.9067
+neurons=64, activation=tanh, lr=0.01 -> mean val acc=0.8629
+neurons=64, activation=sigmoid, lr=0.001 -> mean val acc=0.9105
+neurons=64, activation=sigmoid, lr=0.005 -> mean val acc=0.8647
+neurons=64, activation=sigmoid, lr=0.01 -> mean val acc=0.7613
+neurons=128, activation=relu, lr=0.001 -> mean val acc=0.9149
+neurons=128, activation=relu, lr=0.005 -> mean val acc=0.9146
+neurons=128, activation=relu, lr=0.01 -> mean val acc=0.7596
+neurons=128, activation=tanh, lr=0.001 -> mean val acc=0.9175
+neurons=128, activation=tanh, lr=0.005 -> mean val acc=0.9017
+neurons=128, activation=tanh, lr=0.01 -> mean val acc=0.8533
+neurons=128, activation=sigmoid, lr=0.001 -> mean val acc=0.9143
+neurons=128, activation=sigmoid, lr=0.005 -> mean val acc=0.8130
+neurons=128, activation=sigmoid, lr=0.01 -> mean val acc=0.7992
 
-Final results:
-Train acc: 0.9369, Test acc: 0.9284
+Best hyperparameter combination found:
+Neurons: 32, Activation: tanh, Learning rate: 0.001
+Mean validation accuracy: 0.9219
 
-Classification report (test):
+Training final model with best hyperparameters...
+Early stopping at epoch 11
+
+Classification Report (Test Set):
               precision    recall  f1-score   support
 
-      Cammeo       0.91      0.91      0.91       326
+      Cammeo       0.50      1.00      0.67       326
      Kecimen       1.00      1.00      1.00        90
-    Osmancik       0.93      0.93      0.93       436
+    Osmancik       0.99      0.27      0.42       436
 
-    accuracy                           0.93       852
-   macro avg       0.95      0.95      0.95       852
-weighted avg       0.93      0.93      0.93       852
+    accuracy                           0.62       852
+   macro avg       0.83      0.75      0.70       852
+weighted avg       0.81      0.62      0.58       852
 
-Test Accuracy: 0.9284
-Test Precision (weighted): 0.9284
-Test Recall/Sensitivity (weighted): 0.9284
-Test F1-score (weighted): 0.9284
+Test Accuracy: 0.6232
+Test Precision (weighted): 0.8058
+Test Recall/Sensitivity (weighted): 0.6232
+Test F1-score (weighted): 0.5765
 
 Best hyperparameters found:
-Learning rate: 0.005, Hidden size: 32, Dropout: 0.5
+Neurons in first hidden layer: 32
+Activation function in first hidden layer: tanh
+Learning rate: 0.001
 
 Process finished with exit code 0
