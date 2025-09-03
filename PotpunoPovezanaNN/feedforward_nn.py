@@ -252,6 +252,19 @@ plt.legend()
 plt.grid(True)
 plt.show()
 
+with torch.no_grad():
+    xb1_train = torch.tensor(X_tr, dtype=torch.float32)
+    yb1_train = torch.tensor(y_tr, dtype=torch.long)
+    outputs_test = model(xb1_train)
+    preds_train = outputs_test.argmax(dim=1).numpy()
+cm1 = confusion_matrix(y_tr, preds_train)
+plt.figure(figsize=(8,6))
+sns.heatmap(cm1, annot=True, fmt="d", xticklabels=class_names, yticklabels=class_names, cmap="Blues")
+plt.xlabel("Predicted Class")
+plt.ylabel("True Class")
+plt.title("Confusion Matrix on Training Set")
+plt.show()
+
 # --- TEST SET EVALUATION ---
 # Final model evaluation on unseen test data to measure generalization.
 
