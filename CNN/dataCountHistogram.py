@@ -3,7 +3,7 @@ import pandas as pd
 import seaborn as sns
 from sklearn.preprocessing import LabelEncoder, StandardScaler
 
-df = pd.read_csv("C:\\Users\\jovan\\PycharmProjects\\neuralne2zadatak\\train.csv")
+df = pd.read_csv(".\\dataAll.csv")
 
 features = ["Id"]
 X = df[features].values  # Numeric feature vectors

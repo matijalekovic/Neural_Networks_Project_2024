@@ -442,7 +442,8 @@ print("\nClassification report (validation):")
 print(classification_report(y_true_val, y_pred_val, target_names=classes, zero_division=0))
 
 # Confusion matrix plot
-plot_confusion(y_true_val, y_pred_val, classes, out=CM_VAL, title="Confusion Matrix - Validation")
+plot_confusion(y_t, y_pred_val, classes, out=CM_VAL, title="Confusion Matrix - Training")
+plot_confusion(y_true_val, y_pred_val, classes, out=CM_VAL, title="Confusion Matrix - Test")
 
 # ----------------- Predict test set and write submission -----------------
 test_preds, test_proba = predict_on_dataset(model, test_ds)
