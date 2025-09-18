@@ -206,6 +206,7 @@ def train_and_evaluate():
     draw_histogram(classes, df_train, df_val, df_test)
 
     model = make_model(len(classes))
+    model.summary()
 
     callbacks = [
         EarlyStopping(patience=10, restore_best_weights=True, monitor="val_loss"),
